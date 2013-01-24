@@ -127,3 +127,11 @@ var getHealth = function(){
              return personTele;
 }
 
+//number function with number return
+var numberOfDrops = function(){
+    drop = lootDrops;
+    
+    return drop
+    
+    
+};
