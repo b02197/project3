@@ -146,3 +146,37 @@ var lootdrop = function(){
     return loot;
     
                     };     
+                    
+ // Boolean function with string return.             
+var rollWin = function(){
+    var playerRoll = 100;
+        if (playerRoll == 100){
+        roll = win
+        }
+    
+    
+else
+        roll = you
+ 
+    return roll;
+
+};
+
+
+console.log(boss.bossCheck()); //Function Method result boolean return
+
+console.log(getHealth() + " died from the teleport."); // Array return
+
+console.log(group[4]+ ", please rez " + personTele + ".");//rezzing lambo
+
+boss.death(false); //Exacute Mutator
+
+console.log(boss.bossCheck()); // Mutator result
+
+console.log(numberOfDrops() + " items dropped.")// number return
+
+console.log(lootdrop());//object return
+
+console.log(group[1] + " and " + group[0] + " rolled for " + boss.lootDrops.leatherGloves.name + ".")
+
+console.log(rollWin() +" " + group[0] +" rolled a 100 for the gloves.");                   
