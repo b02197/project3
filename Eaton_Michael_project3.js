@@ -65,3 +65,65 @@ var boss = {
             death:function(defeat){  
                 this.alive = defeat;}, // This make boss dead
                 
+                
+ // Object Property
+    lootDrops:{
+        
+        staff:{
+            name:"Headmaster's Will",
+            spec:"Caster DPS",
+            item:"staff",
+            quality:"epic"
+            },
+        mailGloves:{
+            name:"Gloves of Explosive Pain",
+            spec:"Healer",
+            item:"gloves",
+            quality:"rare"
+            },
+        trinket:{
+            name:"Searing Words",
+            spec:"melee and Ranged DPS",
+            item:"trinket",
+            quality:"rare"
+        },
+        leatherGloves:{
+            name:"Tombstone Gauntlets",
+            spec:"melee DPS and Druid tank",
+            item:"gloves",
+            quality:"rare"
+            }
+    },
+    
+            };
+            
+            //Nested loop and nested conditional with array return
+
+var getHealth = function(){
+             var bossHealth = boss.health
+             var player = group
+             if(bossHealth == boss.health){
+                while (bossHealth > 0){
+                    console.log(boss.name + " is down to " + bossHealth + " health.");
+                    bossHealth-=2951000;
+            
+                        if (bossHealth == 8853000 ){
+                
+                            for(var i=2; i <3;i++){
+                                tele = boss.name + "has teleported " + group[i] + ".";
+                                console.log(tele);
+                            }   
+            
+                        }
+                        else
+                        console.log("No one was teleported.");
+                        
+                                    
+                                    personTele = group[2];
+                }  
+            }
+            else
+            console.log("Did we forget to reset the instance?")
+             return personTele;
+}
+
