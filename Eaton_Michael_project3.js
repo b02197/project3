@@ -135,3 +135,14 @@ var numberOfDrops = function(){
     
     
 };
+
+//string function with object return
+var lootdrop = function(){
+    var loot1 = boss.lootDrops.leatherGloves;
+    var loot2 = boss.lootDrops.staff;
+    var loot3 = boss.lootDrops.trinket;
+    loot = "The loot tht drop is " + loot1.name + ", " + loot2.name + " and " + loot3.name + "."
+    
+    return loot;
+    
+                    };     
