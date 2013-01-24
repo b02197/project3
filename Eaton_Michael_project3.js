@@ -25,6 +25,37 @@ var info ={
                 console.log("Name: " + guildmate.name + ", Level: " + guildmate.level + ", Class: " + guildmate.class + 
                     ", Role: " + guildmate.spec + ", The gear needed: "
                     + guildmate.gearLookingFor + ".");  //Character output from Json
-                    
-                    
+        
+        
+        
+        }
+    }
+};                    
+info.handleData(json2)
 
+//Boss Object
+
+var boss = {
+    
+        name: "Darkmaster Gandling",
+        Level: 92,
+        health: 14755000,
+        alive: true,
+        loot:["Headmaster's Will", "Gloves of Explosive Pain", "Incineration Belt",
+            "Lessons of the Darkmaster", "Price of Progress", "Searing Words",
+            "Shoulderguards of Painful Lessons", "Tombstone Gauntlets",
+            "Vigorsteel Spaulders"],                   
+
+//Method function, Return boolean
+        
+        bossCheck: function(){     
+       
+            if(this.alive == true){var status = "Looks like we are ready. Let's get that " + this.health +
+            " health down to 0."}//If boss is alive
+        
+            else
+        
+            if(this.alive == false){ var status = "Good job guys. Time for loot."}//If boss is dead
+        
+       return status;
+        },
