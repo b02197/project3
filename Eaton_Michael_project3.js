@@ -59,3 +59,9 @@ var boss = {
         
        return status;
         },
+        
+        //Method Mutator
+        
+            death:function(defeat){  
+                this.alive = defeat;}, // This make boss dead
+                
