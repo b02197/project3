@@ -25,4 +25,6 @@ var info ={
                 console.log("Name: " + guildmate.name + ", Level: " + guildmate.level + ", Class: " + guildmate.class + 
                     ", Role: " + guildmate.spec + ", The gear needed: "
                     + guildmate.gearLookingFor + ".");  //Character output from Json
+                    
+                    
 
